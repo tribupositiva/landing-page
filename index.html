@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Amor Propio 21 Días - Transforma tu vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- META PIXEL CODE (Nivel Navegador) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '485810753151383'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=485810753151383&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <style>
+        :root {
+            --bg-cream: #FFF9F5;
+            --primary-pink: #FBCFD0;
+            --secondary-pink: #F8BBD0;
+            --tertiary-pink: #F48FB1;
+            --accent-red: #A33B39;
+            --text-dark: #333333;
+        }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--bg-cream); color: var(--text-dark); scroll-behavior: smooth; overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        .btn-glow { transition: all 0.3s ease; }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(163, 59, 57, 0.4); transform: translateY(-2px); }
+        
+        @keyframes slideInPopup { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        .social-proof-popup { animation: slideInPopup 0.5s ease-out; }
+
+        /* CLASES DE ANIMACIÓN AL HACER SCROLL */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Masonry para Testimonios */
+        .masonry-grid { column-count: 1; column-gap: 1.5rem; }
+        @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item { break-inside: avoid; margin-bottom: 1.5rem; }
+        
+        /* Carrusel Infinito */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-container {
+            display: flex;
+            width: max-content;
+            animation: marquee 35s linear infinite;
+        }
+        .marquee-container:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="text-base">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="bg-[#A33B39] text-white py-2 px-4 text-center text-xs md:text-sm font-medium sticky top-0 z-50 shadow-md">
+        CUPOS LIMITADOS — El Reto comienza este lunes 23/02. Solo quedan <span id="slots" class="bg-white text-[#A33B39] px-2 py-0.5 rounded mx-1 font-bold transition-all duration-300 inline-block">50</span> lugares disponibles.
+    </div>
+
+    <!-- SECCIÓN HERO -->
+    <section class="relative bg-gradient-to-b from-[#FFF9F5] to-white pt-16 pb-20 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <span class="inline-block border border-[#FBCFD0] bg-white text-[#A33B39] px-4 py-1.5 rounded-full text-xs font-bold mb-6 uppercase tracking-widest shadow-sm">
+                El reto que transforma tu relación más importante
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4 text-[#A33B39]">
+                Descubre Cómo Reconectar Con Tu Valor, Sanar Tu Autoestima y <span class="italic font-normal">Enamorarte de Quien Eres</span> en Solo 21 Días
+            </h1>
+            <p class="text-sm md:text-base font-medium text-gray-500 mb-8 max-w-2xl mx-auto">
+                (Un viaje compasivo y práctico para dejar atrás la autocrítica y empezar a tratarte con el amor que realmente mereces)
+            </p>
+            
+            <!-- MOCKUP DEL RETO -->
+            <div class="w-full max-w-3xl mx-auto mb-8 relative reveal delay-100">
+                <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771629588/mockup_final_wfstty.png" 
+                     alt="Mockup del Reto Amor Propio 21 Días" 
+                     class="w-full h-auto rounded-2xl shadow-[0_20px_50px_rgba(163,59,57,0.15)] border-4 border-white transform hover:scale-[1.01] transition-transform duration-500 object-cover">
+            </div>
+
+            <p class="text-base text-gray-600 mb-4 max-w-xl mx-auto reveal delay-200">
+                Un programa guiado paso a paso con ejercicios diarios simples pero poderosos que reprogramarán la forma en que te ves, te hablas y te tratas.
+            </p>
+            <p class="text-base font-bold text-[#A33B39] mb-8 reveal delay-200">
+                INCLUYE REGALO: Libro digital "Cultivando Amor Propio"
+            </p>
+            
+            <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" onclick="trackLead('Hero')" class="reveal delay-300 btn-glow bg-[#A33B39] text-white px-10 py-4 rounded-full text-base md:text-lg font-semibold transition-all inline-block shadow-lg">
+                SÍ, QUIERO UNIRME AL RETO →
+            </a>
+            
+            <div class="mt-6 reveal delay-300 flex flex-col items-center justify-center gap-1.5">
+                <div class="text-yellow-400 text-xl tracking-widest drop-shadow-sm">★★★★★</div>
+                <p class="text-xs text-gray-500 font-bold tracking-wide uppercase">
+                    +25.000 personas ya pasaron por este reto
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE DOLOR / AGITACIÓN -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl md:text-4xl text-center mb-12 font-bold text-[#A33B39] reveal">¿Te reconoces en alguna de estas situaciones?</h2>
+            
+            <div class="grid gap-5">
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Te miras al espejo y solo ves defectos.</b> Nunca es suficiente. Siempre hay algo que cambiar, esconder o supuestamente "mejorar".</p>
+                </div>
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal delay-100">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Dices que sí cuando quieres decir que no.</b> Porque priorizarte te hace sentir culpa o te hace pensar que eres egoísta.</p>
+                </div>
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal delay-200">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Pones las necesidades de todos antes que las tuyas.</b> Y al final del día terminas con un profundo agotamiento y vacío.</p>
+                </div>
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Buscas validación constantemente.</b> Dependes de un cumplido o una aprobación externa para sentir que tienes valor.</p>
+                </div>
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal delay-100">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Toleras relaciones que te lastiman</b> porque en el fondo existe la creencia de que no mereces algo mejor.</p>
+                </div>
+                <div class="flex items-start gap-4 p-5 bg-[#FFF9F5] rounded-xl border border-gray-100 reveal delay-200">
+                    <div class="min-w-[8px] h-2 rounded-full bg-[#A33B39] mt-2"></div>
+                    <p class="text-sm md:text-base text-gray-700"><b>Esa vocecita interior nunca se calla:</b> <i>"No eres suficiente", "¿Quién te crees?", "No lo vas a lograr".</i></p>
+                </div>
+            </div>
+
+            <div class="mt-14 text-center reveal p-8 bg-gradient-to-br from-[#FFF9F5] to-[#FBCFD0]/20 rounded-2xl border border-[#FBCFD0]/50 shadow-sm">
+                <p class="text-xl font-bold mb-4 text-[#A33B39]">Si te identificas con al menos UNA de estas situaciones... esto es exactamente para ti.</p>
+                <p class="text-sm md:text-base text-gray-700 mb-6 max-w-2xl mx-auto">Y no, no es tu culpa. A la mayoría nos enseñaron a ser fuertes, a dar, a complacer... pero casi nadie nos enseñó <b>cómo tratarnos con el amor que merecemos.</b></p>
+                <h3 class="text-2xl font-bold text-[#A33B39] mb-8">Hasta hoy. Porque este reto va a cambiar eso.</h3>
+                <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow inline-block text-white bg-[#A33B39] px-8 py-4 rounded-full font-semibold text-base md:text-lg transition-all shadow-lg">
+                    QUIERO EMPEZAR A AMARME DE VERDAD →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIMEROS TESTIMONIOS (3 PERSONAS) -->
+    <section class="py-16 bg-[#FFF9F5] border-t border-[#FBCFD0]/40">
+        <div class="max-w-5xl mx-auto px-6 reveal">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#A33B39] mb-10">Ellos ya dieron el primer paso...</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonio Texto Normal -->
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Daniel R." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Daniel R., 30 años</p>
+                            <p class="text-gray-500 text-[10px]">Bogotá, Colombia</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Antes me costaba mirarme al espejo. Hoy me miro y sonrío. No porque sea perfecto, sino porque por fin aprendí que no necesito serlo."</p>
+                </div>
+                
+                <!-- Testimonio estilo Instagram DM -->
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&w=150" alt="caro_m28" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">caro_m28</p>
+                            <p class="text-gray-500 text-[10px]">CDMX, México</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-sm p-3 text-sm text-gray-700">
+                        ¡Hola! 🥺 Pensé que era 'otro reto más'. Pero voy por el día 3 y acabo de llorar, reír y soltar. Es hermoso lo que estoy viviendo.
+                    </div>
+                </div>
+
+                <!-- Testimonio estilo WhatsApp -->
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-200">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-50">
+                        <img src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Camila R." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Camila R.</p>
+                            <p class="text-gray-500 text-[10px]">Buenos Aires, Argentina</p>
+                        </div>
+                        <span class="ml-auto text-[10px] text-gray-400">WhatsApp</span>
+                    </div>
+                    <div class="bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Gracias a este programa tuve la fuerza para salir de una relación que me estaba apagando. Me dio muchísima claridad 🙏✨
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-500">10:42 AM <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ ES EL RETO -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center reveal mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#A33B39] mb-4">Te damos la bienvenida al Reto de 21 Días</h2>
+                <p class="text-base font-semibold text-[#A33B39] uppercase tracking-widest bg-[#FFF9F5] inline-block px-6 py-2 rounded-full shadow-sm border border-[#FBCFD0]/50">No es motivación vacía. Es transformación interior.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center reveal">
+                <div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">¿Por qué 21 días?</h3>
+                    <p class="text-sm md:text-base text-gray-600 mb-8 leading-relaxed">La ciencia ha demostrado que 21 días es el tiempo mínimo necesario para crear un nuevo hábito. En este caso, el hábito más poderoso que puedes desarrollar: <b>el hábito de amarte.</b></p>
+                    
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Cada día recibirás:</h3>
+                    <ul class="space-y-4 text-sm md:text-base text-gray-700">
+                        <li class="flex items-start gap-3"><div class="min-w-[6px] h-[6px] rounded-full bg-[#A33B39] mt-2"></div> <span><b>Un ejercicio práctico</b> transformador (15-20 min)</span></li>
+                        <li class="flex items-start gap-3"><div class="min-w-[6px] h-[6px] rounded-full bg-[#A33B39] mt-2"></div> <span><b>Un mensaje de reflexión</b> directo a tu conciencia</span></li>
+                        <li class="flex items-start gap-3"><div class="min-w-[6px] h-[6px] rounded-full bg-[#A33B39] mt-2"></div> <span><b>Instrucciones de escritura</b> para explorar tu interior</span></li>
+                        <li class="flex items-start gap-3"><div class="min-w-[6px] h-[6px] rounded-full bg-[#A33B39] mt-2"></div> <span><b>Acceso 100% digital e inmediato</b> desde cualquier dispositivo</span></li>
+                    </ul>
+                </div>
+                <div class="text-center bg-[#FFF9F5] p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 italic text-sm mb-6 leading-relaxed">"Un programa guiado para romper patrones y construir una relación inquebrantable con la persona que ves en el espejo."</p>
+                    <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow bg-[#A33B39] text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold shadow-lg inline-block w-full">
+                        ESTOY LISTO/A PARA ESTE CAMBIO →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTRUCTURA PIRÁMIDE (FASES) -->
+    <section class="py-20 bg-[#FFF9F5]">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-14">
+            <div class="lg:w-1/2 reveal">
+                <h2 class="text-3xl font-bold text-[#A33B39] mb-10 text-center lg:text-left">Tu camino de transformación en 3 fases</h2>
+                
+                <div class="space-y-4">
+                    <!-- Semana 1 -->
+                    <details class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm cursor-pointer" open>
+                        <summary class="flex justify-between items-center outline-none list-none [&::-webkit-details-marker]:hidden">
+                            <h3 class="text-lg font-bold text-[#A33B39] uppercase tracking-wide m-0">SEMANA 1: DESPERTAR <span class="text-xs font-normal text-gray-500 normal-case">(Días 1-7)</span></h3>
+                            <span class="transition duration-300 group-open:-rotate-180 text-[#A33B39]">
+                                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-50">
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li><b class="text-gray-800">Día 1:</b> Obtendrás claridad profunda sobre quién eres y qué necesitas para empezar a transformarte.</li>
+                                <li><b class="text-gray-800">Día 2:</b> Descubrirás tu nivel real de amor propio y tendrás un punto de partida claro.</li>
+                                <li><b class="text-gray-800">Día 3:</b> Aprenderás a identificar y tomar control de tu diálogo interno.</li>
+                                <li><b class="text-gray-800">Día 4:</b> Reescribirás las creencias que te limitan para construir una narrativa poderosa.</li>
+                                <li><b class="text-gray-800">Día 5:</b> Sanarás la relación con tu cuerpo y empezarás a mirarte con respeto.</li>
+                                <li><b class="text-gray-800">Día 6:</b> Transformarás tu identidad reemplazando etiquetas limitantes.</li>
+                                <li><b class="text-gray-800">Día 7:</b> Integrarás la certeza de que tu valor es incondicional.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Semana 2 -->
+                    <details class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm cursor-pointer">
+                        <summary class="flex justify-between items-center outline-none list-none [&::-webkit-details-marker]:hidden">
+                            <h3 class="text-lg font-bold text-[#A33B39] uppercase tracking-wide m-0">SEMANA 2: SANAR <span class="text-xs font-normal text-gray-500 normal-case">(Días 8-14)</span></h3>
+                            <span class="transition duration-300 group-open:-rotate-180 text-[#A33B39]">
+                                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-50">
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li><b class="text-gray-800">Día 8:</b> Fortalecerás tu confianza reconociendo evidencias de tu crecimiento.</li>
+                                <li><b class="text-gray-800">Día 9:</b> Aprenderás a aceptar tus luces y sombras sin juicio.</li>
+                                <li><b class="text-gray-800">Día 10:</b> Romperás el hábito de compararte y empezarás a valorar tu proceso.</li>
+                                <li><b class="text-gray-800">Día 11:</b> Incorporarás límites saludables que protegerán tu energía.</li>
+                                <li><b class="text-gray-800">Día 12:</b> Liberarás resentimientos practicando el perdón como acto de amor.</li>
+                                <li><b class="text-gray-800">Día 13:</b> Desarrollarás resiliencia para enfrentar desafíos sin perder tu centro.</li>
+                                <li><b class="text-gray-800">Día 14:</b> Reforzarás tu autoestima a través de hábitos conscientes.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Semana 3 -->
+                    <details class="group bg-white p-6 rounded-xl border border-gray-100 shadow-sm cursor-pointer">
+                        <summary class="flex justify-between items-center outline-none list-none [&::-webkit-details-marker]:hidden">
+                            <h3 class="text-lg font-bold text-[#A33B39] uppercase tracking-wide m-0">SEMANA 3: FLORECER <span class="text-xs font-normal text-gray-500 normal-case">(Días 15-21)</span></h3>
+                            <span class="transition duration-300 group-open:-rotate-180 text-[#A33B39]">
+                                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </summary>
+                        <div class="mt-4 pt-4 border-t border-gray-50">
+                            <ul class="text-gray-600 text-sm space-y-2">
+                                <li><b class="text-gray-800">Día 15:</b> Aprenderás a elegir relaciones que reflejen el respeto que tienes por ti.</li>
+                                <li><b class="text-gray-800">Día 16:</b> Fortalecerás tu capacidad de decir “no” sin culpa y priorizarte.</li>
+                                <li><b class="text-gray-800">Día 17:</b> Integrarás la gratitud como herramienta para elevar tu estado emocional.</li>
+                                <li><b class="text-gray-800">Día 18:</b> Crearás un entorno que apoye tu nueva versión.</li>
+                                <li><b class="text-gray-800">Día 19:</b> Consolidarás una mentalidad expansiva que te permita avanzar con confianza.</li>
+                                <li><b class="text-gray-800">Día 20:</b> Diseñarás un plan personal para sostener tu amor propio a largo plazo.</li>
+                                <li><b class="text-gray-800">Día 21:</b> Saldrás con una identidad renovada, segura y alineada con la mejor versión de ti.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 w-full max-w-sm mx-auto reveal delay-200">
+                <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771623067/D%C3%8DA_21_de_21_-_RETO_AMOR_PROPIO_1_ev8nhh.png" 
+                     alt="Pirámide de Amor Propio y Autoestima" 
+                     class="w-full h-auto drop-shadow-xl transform hover:scale-[1.02] transition-transform duration-500">
+            </div>
+        </div>
+        <div class="text-center mt-12 reveal">
+            <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow inline-block bg-[#A33B39] text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold shadow-lg">
+                QUIERO VIVIR ESTA TRANSFORMACIÓN →
+            </a>
+        </div>
+    </section>
+
+    <!-- UN VISTAZO DENTRO DEL RETO (CARRUSEL) -->
+    <section class="py-20 bg-white overflow-hidden border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 mb-12 reveal">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#A33B39] mb-3 uppercase tracking-wider">Un vistazo dentro del reto</h2>
+            <p class="text-center text-gray-500 text-sm font-medium">Así se ven las páginas reales de tu programa guiado de 21 días</p>
+        </div>
+        
+        <div class="relative w-full overflow-hidden">
+            <!-- Sombras laterales para efecto suave de entrada/salida -->
+            <div class="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+            
+            <div class="marquee-container py-4">
+                <!-- Track 1 -->
+                <div class="flex gap-6 pr-6">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_7_de_21_-_RETO_AMOR_PROPIO_lzqxjl.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 7">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_1_de_21_-_RETO_AMOR_PROPIO_s3t65h.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 1">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_8_de_21_-_RETO_AMOR_PROPIO_rakkmq.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 8">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_2_de_21_-_RETO_AMOR_PROPIO_sa0ck8.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 2">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_4_de_21_-_RETO_AMOR_PROPIO_2_bxbrfr.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 4 parte 2">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631423/D%C3%8DA_9_de_21_-_RETO_AMOR_PROPIO_lz1qdn.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 9">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631423/D%C3%8DA_4_de_21_-_RETO_AMOR_PROPIO_1_qvtqhb.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 4">
+                </div>
+                <!-- Track 2 (Clon para scroll infinito suave) -->
+                <div class="flex gap-6 pr-6" aria-hidden="true">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_7_de_21_-_RETO_AMOR_PROPIO_lzqxjl.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 7">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_1_de_21_-_RETO_AMOR_PROPIO_s3t65h.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 1">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_8_de_21_-_RETO_AMOR_PROPIO_rakkmq.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 8">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_2_de_21_-_RETO_AMOR_PROPIO_sa0ck8.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 2">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631422/D%C3%8DA_4_de_21_-_RETO_AMOR_PROPIO_2_bxbrfr.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 4 parte 2">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631423/D%C3%8DA_9_de_21_-_RETO_AMOR_PROPIO_lz1qdn.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 9">
+                    <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771631423/D%C3%8DA_4_de_21_-_RETO_AMOR_PROPIO_1_qvtqhb.png" class="h-72 md:h-96 w-auto rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.08)] border border-gray-100 transform hover:scale-[1.03] transition-transform duration-300" alt="Día 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGUNDOS TESTIMONIOS (6 PERSONAS) -->
+    <section class="py-16 bg-[#FFF9F5] border-t border-[#FBCFD0]/40">
+        <div class="max-w-6xl mx-auto px-6 reveal">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-[#A33B39] mb-10">Transformaciones reales en 21 días</h2>
+            <div class="masonry-grid">
+                
+                <!-- Testimonio WA -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-50">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Marcos T." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Marcos T.</p>
+                            <p class="text-gray-500 text-[10px]">Montevideo, Uruguay</p>
+                        </div>
+                        <span class="ml-auto text-[10px] text-gray-400">WhatsApp</span>
+                    </div>
+                    <div class="bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Quería compartirte que por fin aprendí a decir no. Suena simple, pero me costó 35 años lograrlo sin sentirme mala persona. Vale cada centavo invertido.
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-500">19:15 <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio Normal -->
+                <div class="masonry-item bg-[#FFF9F5] p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Lucía H." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Lucía H., 27 años</p>
+                            <p class="text-gray-500 text-[10px]">Santiago, Chile</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"El trabajo con mi niña interior fue revelador. Doloroso al principio, pero sumamente sanador y necesario."</p>
+                </div>
+                
+                <!-- Testimonio IG -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-200">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150" alt="valen_n" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">valen_n</p>
+                            <p class="text-gray-500 text-[10px]">Lima, Perú</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-sm p-3 text-sm text-gray-700">
+                        Te escribo para darte las gracias. Mi diálogo mental pasó de ser agresivo a ser mi mejor amigo. Es una paz inmensa vivir así día a día 🤍
+                    </div>
+                </div>
+
+                <!-- Testimonio WA -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-50">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Andrea B." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Andrea B.</p>
+                            <p class="text-gray-500 text-[10px]">Medellín, Colombia</p>
+                        </div>
+                        <span class="ml-auto text-[10px] text-gray-400">WhatsApp</span>
+                    </div>
+                    <div class="bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Hola! Acabo de terminar el día 12 y solté la culpa que cargaba por decisiones pasadas. Me he perdonado, y eso aligeró mi camino por completo.
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-500">08:30 AM <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio Normal -->
+                <div class="masonry-item bg-[#FFF9F5] p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Elena V." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Elena V., 50 años</p>
+                            <p class="text-gray-500 text-[10px]">San José, Costa Rica</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Nunca es tarde para tratarse bien. A mis 50 años siento que acabo de reconectar. El proceso es muy sano y seguro."</p>
+                </div>
+
+                <!-- Testimonio IG -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-200">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=150" alt="romi_c29" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">romi_c29</p>
+                            <p class="text-gray-500 text-[10px]">Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-sm p-3 text-sm text-gray-700">
+                        Solo dedicarme esos minutos por la mañana cambió el resto de mi rutina. Reduje muchísimo la ansiedad por agradar a todos. 🙌
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUS REGALO + TEMPORIZADOR -->
+    <section class="py-20 bg-[#FFF9F5]">
+        <div class="max-w-5xl mx-auto px-6 reveal">
+            <h2 class="text-3xl font-bold text-center text-[#A33B39] mb-10">Y además te llevas un obsequio especial...</h2>
+            
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-[#A33B39] text-white px-6 py-1.5 rounded-bl-xl font-bold text-xs uppercase tracking-widest z-10">
+                    INCLUIDO HOY
+                </div>
+                
+                <div class="grid md:grid-cols-5 gap-10 items-center">
+                    <div class="md:col-span-2 text-center">
+                        
+                        <!-- 📸 MOCKUP DEL BONUS -->
+                        <div class="relative w-full max-w-[320px] mx-auto mt-4">
+                            <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771627290/TICKET_RETO_POSITIVO_1_xf1hqw.png" 
+                                 alt="Mockup Bono Libro Digital" 
+                                 class="w-full h-auto drop-shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                            
+                            <!-- Etiqueta de Precio $29 Tachado y Gratis -->
+                            <div class="absolute -bottom-4 -left-2 md:-left-4 bg-green-600 text-white w-24 h-24 flex flex-col items-center justify-center rounded-full shadow-xl border-4 border-white transform -rotate-12 z-20">
+                                <span class="text-sm font-bold line-through opacity-90 leading-none mb-1 text-green-200">$29</span>
+                                <span class="text-[10px] font-black leading-tight uppercase text-center tracking-widest">SOLO HOY<br>GRATIS</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Libro Digital: "Cultivando Amor Propio"</h3>
+                        <p class="text-[#A33B39] font-semibold text-sm mb-6 uppercase tracking-wider">Valorado en $29 USD — ¡De regalo con tu inscripción!</p>
+                        
+                        <p class="font-medium text-gray-700 text-sm mb-4">Tu guía íntima para seguir avanzando. ¿Qué encontrarás dentro?</p>
+                        
+                        <ul class="text-sm space-y-3 mb-8 text-gray-600">
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Los 7 pilares del amor propio:</b> Método estructurado que integra autoconciencia, autorespeto y automotivación para una vida plena.</span>
+                            </li>
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Reprogramación del diálogo interno:</b> Técnicas para eliminar pensamientos negativos y usar el poder de las palabras a tu favor.</span>
+                            </li>
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Límites sin culpa:</b> Consejos prácticos para proteger tu dignidad y mejorar tus relaciones interpersonales.</span>
+                            </li>
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Rutina de "Hora Poderosa":</b> Plan diario de 60 minutos con movimiento, meditación y escritura para maximizar tu energía.</span>
+                            </li>
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Ejercicios de autoexploración:</b> Cuestionarios y plantillas para descubrir tu misión personal y medir tu progreso real.</span>
+                            </li>
+                            <li class="flex gap-2 items-start">
+                                <span class="text-[#A33B39] font-bold mt-0.5">•</span> 
+                                <span><b class="text-gray-800">Gestión emocional avanzada:</b> Cómo usar tu cerebro evolucionado para mantener la calma ante situaciones de estrés o personas difíciles.</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- Temporizador -->
+                        <div class="bg-[#FFF9F5] p-5 rounded-xl text-center mb-6 border border-[#FBCFD0]/40">
+                            <p class="text-xs font-bold text-gray-500 mb-2 uppercase tracking-widest">Asegura tu copia gratuita antes de que el reloj llegue a cero:</p>
+                            <div class="flex justify-center gap-4 text-[#A33B39] font-bold text-3xl">
+                                <div class="flex flex-col"><span id="timer-min">15</span><span class="text-[9px] text-gray-400 font-normal tracking-widest">MIN</span></div>
+                                <span class="font-normal text-gray-300">:</span>
+                                <div class="flex flex-col"><span id="timer-sec">00</span><span class="text-[9px] text-gray-400 font-normal tracking-widest">SEG</span></div>
+                            </div>
+                        </div>
+
+                        <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow bg-[#A33B39] text-white w-full inline-block text-center py-4 rounded-full text-base md:text-lg font-semibold shadow-lg transition-all uppercase">
+                            QUIERO EL RETO + MI LIBRO DE REGALO
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUIÉN ES -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6 reveal">
+            <h2 class="text-3xl font-bold text-center text-[#A33B39] mb-12">¿Es este reto para ti?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-[#FFF9F5] p-8 rounded-2xl border border-gray-100">
+                    <h3 class="text-lg font-bold mb-5 text-gray-800">ESTE PROGRAMA ES PARA TI SI...</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex gap-2"><span>•</span> Sientes que te has perdido entre tantas responsabilidades.</li>
+                        <li class="flex gap-2"><span>•</span> Sabes que mereces más pero no logras sentirlo de verdad.</li>
+                        <li class="flex gap-2"><span>•</span> Te cansa depender emocionalmente de otros para sentirte bien.</li>
+                        <li class="flex gap-2"><span>•</span> Quieres dejar de comparar tu vida en redes sociales.</li>
+                        <li class="flex gap-2"><span>•</span> Necesitas aprender a decir "NO" sin experimentar culpa.</li>
+                        <li class="flex gap-2"><span>•</span> Quieres despertar y pensar: "Me amo, y eso no es negociable".</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                    <h3 class="text-lg font-bold mb-5 text-gray-600">NO ES PARA TI SI...</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex gap-2"><span>•</span> Buscas una solución mágica sin poner esfuerzo de tu partre.</li>
+                        <li class="flex gap-2"><span>•</span> No tienes disposición para dedicarte 15-20 minutos diarios.</li>
+                        <li class="flex gap-2"><span>•</span> Prefieres mantenerte en la queja en lugar de actuar.</li>
+                        <li class="flex gap-2"><span>•</span> Consideras que es imposible cambiar tus patrones mentales.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow inline-block bg-[#A33B39] text-white px-10 py-4 rounded-full text-base md:text-lg font-semibold shadow-lg">
+                    SI ES PARA MÍ. ME UNO AHORA →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TERCEROS TESTIMONIOS (6 PERSONAS) -->
+    <section class="py-20 bg-[#FFF9F5] overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 reveal">
+            <h2 class="text-3xl font-bold text-center text-[#A33B39] mb-3">Quienes ya vivieron la transformación</h2>
+            <div class="flex flex-col items-center justify-center mb-12 gap-1.5">
+                <div class="text-yellow-400 text-lg tracking-widest drop-shadow-sm">★★★★★</div>
+                <p class="text-center text-gray-500 text-sm font-medium">+25.000 personas ya pasaron por este reto. Algunas de sus experiencias:</p>
+            </div>
+            
+            <div class="masonry-grid">
+                <!-- Testimonio WA -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-100">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-50">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Luisa A." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Luisa A.</p>
+                            <p class="text-gray-500 text-[10px]">Quito, Ecuador</p>
+                        </div>
+                        <span class="ml-auto text-[10px] text-gray-400">WhatsApp</span>
+                    </div>
+                    <div class="bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Logré poner límites con mi familia por primera vez en 40 años y sin sentir culpa. No tengo palabras para agradecerte lo que haces.
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-500">14:05 <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio IG -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-200">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=150" alt="sofi_p" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">sofi_p</p>
+                            <p class="text-gray-500 text-[10px]">Córdoba, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-sm p-3 text-sm text-gray-700">
+                        No te imaginas la paz mental que tengo desde que dejé de compararme en redes. Los ejercicios de escritura son oro puro ✨📝
+                    </div>
+                </div>
+
+                <!-- Testimonio Texto Normal -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-300">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Javier M." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Javier M., 45 años</p>
+                            <p class="text-gray-500 text-[10px]">Monterrey, México</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Tengo que admitir que entré con dudas siendo hombre, pero la estructura del reto me voló la cabeza."</p>
+                </div>
+                
+                <!-- Testimonio WA -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-50">
+                        <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Diana F." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Diana F.</p>
+                            <p class="text-gray-500 text-[10px]">Cali, Colombia</p>
+                        </div>
+                        <span class="ml-auto text-[10px] text-gray-400">WhatsApp</span>
+                    </div>
+                    <div class="bg-[#dcf8c6] rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Hoy me atreví a pedir lo que merecía en el trabajo porque por fin me di cuenta de mi propio valor. Gracias infinitas.
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-500">11:20 AM <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio IG -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150" alt="mari_l31" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">mari_l31</p>
+                            <p class="text-gray-500 text-[10px]">Guadalajara, México</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl rounded-tl-sm p-3 text-sm text-gray-700">
+                        Dejé la dependencia. Ya no requiero que alguien me diga que soy suficiente para sentirlo como una realidad. 🙏🏻
+                    </div>
+                </div>
+
+                <!-- Testimonio Texto Normal -->
+                <div class="masonry-item bg-white p-5 rounded-xl border border-gray-100 shadow-sm reveal delay-200">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sebastián R." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Sebastián R., 40 años</p>
+                            <p class="text-gray-500 text-[10px]">Rosario, Argentina</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Las herramientas me respaldaron cuando quise abandonar el proceso. Hoy valoro muchísimo haberme quedado."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRECIO Y OFERTA 🔥 -->
+    <section id="precios" class="py-20 bg-white text-center border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#A33B39]">¿Cuánto vale transformar la relación más importante de tu vida?</h2>
+            <p class="text-gray-600 font-medium mb-8">Piénsalo así. Esto es lo que solemos gastar buscando sentirnos mejor a corto plazo:</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 my-10 text-left">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col justify-center">
+                    <p class="text-gray-500 text-sm mb-3 flex items-start gap-2"><span class="text-red-400 text-xs mt-0.5">❌</span> <span class="line-through">Una sola sesión de terapia: $50 - $150 USD</span></p>
+                    <p class="text-gray-500 text-sm mb-3 flex items-start gap-2"><span class="text-red-400 text-xs mt-0.5">❌</span> <span class="line-through">Libros de autoayuda que no terminas: $100+ USD</span></p>
+                    <p class="text-gray-500 text-sm flex items-start gap-2"><span class="text-red-400 text-xs mt-0.5">❌</span> <span class="line-through">Ese café diario por 21 días: $80+ USD</span></p>
+                </div>
+                <div class="bg-[#FFF9F5] p-6 rounded-xl border border-[#FBCFD0]/40 flex items-center justify-center shadow-sm">
+                    <p class="text-lg md:text-xl font-bold text-[#A33B39] text-center leading-relaxed">✨ Este reto te dará una seguridad inquebrantable que se quedará contigo PARA SIEMPRE.</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-[#A33B39] to-red-900 rounded-[2rem] p-[2px] shadow-lg relative max-w-2xl mx-auto">
+                <div class="bg-white rounded-[1.9rem] p-8 md:p-10 relative overflow-hidden">
+                    
+                    <div class="absolute top-0 right-0 bg-[#A33B39] text-white px-6 py-1.5 rounded-bl-xl font-bold text-xs uppercase tracking-widest z-10">
+                        OFERTA ESPECIAL
+                    </div>
+                    
+                    <!-- 📸 MOCKUP DEL RETO EN OFERTA -->
+                    <div class="relative w-full max-w-sm mx-auto mt-6 mb-8">
+                        <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771627291/LANDING_PAGE_6_yfhpuk.png" 
+                             alt="Mockup Reto Amor Propio" 
+                             class="w-full h-auto drop-shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        
+                        <!-- Etiqueta de Precio $47 -->
+                        <div class="absolute -top-3 -right-3 md:-right-5 bg-[#A33B39] text-white w-20 h-20 flex flex-col items-center justify-center rounded-full shadow-xl border-4 border-white transform rotate-12 z-20">
+                            <span class="text-[9px] uppercase font-bold tracking-widest leading-none mb-0.5 opacity-90">Valor</span>
+                            <span class="text-2xl font-black leading-none line-through decoration-white/70 decoration-2">$47</span>
+                        </div>
+                    </div>
+
+                    <!-- 📸 MOCKUP DEL BONUS EN OFERTA -->
+                    <div class="relative w-full max-w-sm mx-auto mb-10">
+                        <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771627290/TICKET_RETO_POSITIVO_1_xf1hqw.png" 
+                             alt="Mockup Bono Libro Digital" 
+                             class="w-full h-auto drop-shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        
+                        <!-- Etiqueta de Precio $29 Tachado y Gratis -->
+                        <div class="absolute -bottom-2 -left-2 md:-left-6 bg-green-600 text-white w-24 h-24 flex flex-col items-center justify-center rounded-full shadow-xl border-4 border-white transform -rotate-12 z-20">
+                            <span class="text-sm font-bold line-through opacity-90 leading-none mb-1 text-green-200">$29</span>
+                            <span class="text-[10px] font-black leading-tight uppercase text-center tracking-widest">SOLO HOY<br>GRATIS</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">RESUMEN DE TU ACCESO HOY:</h3>
+                    
+                    <div class="space-y-3 text-left max-w-md mx-auto mb-8 text-sm">
+                        <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700 font-medium">Programa 21 Días Completo</span>
+                            <span class="text-gray-400">$47 USD</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700 font-medium">Acceso Inmediato y de por Vida</span>
+                            <span class="text-gray-400">Incluido</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-gray-100 pb-2">
+                            <span class="text-gray-700 font-medium">Formato 100% Digital a tu Ritmo</span>
+                            <span class="text-gray-400">Incluido</span>
+                        </div>
+                        <div class="flex items-center justify-between text-[#A33B39] bg-[#FFF9F5] p-2 rounded-md font-semibold">
+                            <span>Libro 100% Digital "Cultivando Amor Propio"</span>
+                            <span>$29 USD</span>
+                        </div>
+                        <div class="flex items-center justify-between pt-3 font-bold text-base text-gray-800">
+                            <span>VALOR TOTAL</span>
+                            <span class="line-through text-gray-400 font-normal">$76 USD</span>
+                        </div>
+                    </div>
+
+                    <div class="my-6">
+                        <p class="text-xs font-bold text-red-600 uppercase tracking-widest mb-1">80% DE DESCUENTO</p>
+                        <div class="flex items-center justify-center gap-3">
+                            <span class="text-2xl text-gray-300 line-through font-medium">$76</span>
+                            <span class="text-6xl font-black text-[#A33B39]">$14.99</span>
+                        </div>
+                        <p class="text-gray-500 text-xs mt-2 font-medium">Menos de $0.72 centavos al día.</p>
+                    </div>
+
+                    <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" onclick="trackPurchaseEvent(14.99)" class="btn-glow block w-full bg-[#A33B39] text-white py-4 rounded-full text-base md:text-lg font-bold shadow-lg transition-all uppercase tracking-wide">
+                        SÍ, QUIERO LA OFERTA POR $14.99 →
+                    </a>
+
+                    <!-- LOGOS DE PAGO -->
+                    <div class="mt-5 flex justify-center items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer">
+                        <img src="https://res.cloudinary.com/duz5ewaqg/image/upload/v1771645794/ADS_-_1080x1350_5_pvv8cv.png" alt="Métodos de pago seguros" class="h-10 md:h-14 w-auto object-contain">
+                    </div>
+                    
+                    <div class="mt-5 flex flex-wrap justify-center gap-3 text-[10px] font-semibold text-gray-400 uppercase tracking-widest">
+                        <span>🔒 Pago Seguro</span>
+                        <span>•</span>
+                        <span>⚡ Acceso Inmediato</span>
+                        <span>•</span>
+                        <span>🛡️ Garantía 7 Días</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-600 bg-[#FFF9F5] p-4 rounded-lg border border-gray-100 max-w-2xl mx-auto leading-relaxed">
+                <b>IMPORTANTE:</b> Este precio es EXCLUSIVO por este fin de semana. El reto comienza este <b>lunes 23/02</b>, aprovecha la oferta completa hasta esa fecha.
+            </p>
+        </div>
+    </section>
+
+    <!-- GARANTÍA Y URGENCIA -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-8 reveal">
+            
+            <!-- Garantía -->
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center md:text-left">
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Garantía de 7 Días</h2>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed">Sé que funciona. Miles de personas lo confirman. Pero entiendo que dar el primer paso puede causar incertidumbre.</p>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed font-medium">Si en los primeros 7 días del reto sientes que la metodología no resuena contigo, solo contáctanos y te devolveremos tu inscripción. Sin letra pequeña.</p>
+                <p class="text-sm font-bold text-[#A33B39]">Tu único riesgo real es no intentarlo.</p>
+            </div>
+
+            <!-- Urgencia -->
+            <div class="bg-[#FFF9F5] p-8 rounded-2xl border border-[#FBCFD0]/40 text-center md:text-left shadow-sm">
+                <h2 class="text-xl font-bold text-[#A33B39] mb-4">¿Por qué AHORA?</h2>
+                <ul class="space-y-2.5 text-gray-700 text-sm mb-6">
+                    <li><b class="font-semibold">• Razón 1:</b> Esta oferta especial tiene cupos limitados.</li>
+                    <li><b class="font-semibold">• Razón 2:</b> El precio de $14.99 estará disponible solo este fin de semana.</li>
+                    <li><b class="font-semibold">• Razón 3:</b> Comenzamos oficialmente el lunes 23/02.</li>
+                    <li><b class="font-semibold">• Razón 4:</b> Posponer esto es un día más viviendo en desconexión contigo.</li>
+                </ul>
+                <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow block w-full text-center bg-[#A33B39] text-white py-3.5 rounded-full text-base font-semibold shadow-lg transition-all">
+                    ME UNO HOY POR $14.99
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CUARTOS TESTIMONIOS (5 PERSONAS) -->
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 reveal">
+            <h2 class="text-2xl font-bold text-center text-[#A33B39] mb-8">El valor real detrás de esta oferta...</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Testimonio WA -->
+                <div class="bg-[#FFF9F5] p-5 rounded-xl border border-[#FBCFD0]/40 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3 pb-2 border-b border-gray-100">
+                        <img src="https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Valentina S." class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">Valentina S.</p>
+                            <p class="text-gray-500 text-[10px]">Asunción, Paraguay</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-lg rounded-tl-none p-3 text-sm text-gray-800 relative">
+                        Me devoré el libro de regalo en una noche jajaja. Era justo lo que necesitaba leer hoy.
+                        <div class="text-right mt-1">
+                            <span class="text-[9px] text-gray-400">22:45 <span class="text-blue-500 font-bold inline-block ml-0.5">✓✓</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio Texto -->
+                <div class="bg-[#FFF9F5] p-5 rounded-xl border border-[#FBCFD0]/40 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Carmen T." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Carmen T., 48 años</p>
+                            <p class="text-gray-500 text-[10px]">Valencia, España</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Una inversión excelente. Las herramientas que obtienes no se olvidan, se aplican a cada reto que la vida te pone."</p>
+                </div>
+                
+                <!-- Testimonio Texto -->
+                <div class="bg-[#FFF9F5] p-5 rounded-xl border border-[#FBCFD0]/40 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Juliana P." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Juliana P., 26 años</p>
+                            <p class="text-gray-500 text-[10px]">Cartagena, Colombia</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"Es un cambio desde la raíz. Si tienes ganas reales de construir una buena autoestima, es el lugar correcto."</p>
+                </div>
+                
+                <!-- Testimonio IG Larga -->
+                <div class="bg-white p-5 rounded-xl border border-[#FBCFD0]/40 shadow-sm lg:col-span-2 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[2px]">
+                            <img src="https://images.pexels.com/photos/3771807/pexels-photo-3771807.jpeg?auto=compress&cs=tinysrgb&w=150" alt="naty_m32" class="w-full h-full rounded-full object-cover border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-gray-800">naty_m32</p>
+                            <p class="text-gray-500 text-[10px]">Mar del Plata, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl rounded-tl-sm p-4 text-sm text-gray-700">
+                        Solo pasaba a decir que la claridad y los recursos que brindan hacen que la oferta sea una de las mejores inversiones personales que he hecho. ¡Gracias! ❤️
+                    </div>
+                </div>
+
+                <!-- Testimonio Texto -->
+                <div class="bg-[#FFF9F5] p-5 rounded-xl border border-[#FBCFD0]/40 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Andrea G." class="w-10 h-10 rounded-full object-cover border border-gray-200">
+                        <div>
+                            <p class="font-bold text-gray-800 text-xs">Andrea G., 39 años</p>
+                            <p class="text-gray-500 text-[10px]">La Paz, Bolivia</p>
+                            <p class="text-[#A33B39] text-[10px]">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-600 text-sm">"La guía de obsequio es muy práctica. Sus afirmaciones están ahora incorporadas en mi rutina de la mañana."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-[#FFF9F5]">
+        <div class="max-w-3xl mx-auto px-6 reveal">
+            <h2 class="text-3xl font-bold text-center text-[#A33B39] mb-10">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-4 text-sm">
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="font-bold text-gray-800 mb-1">¿Es un programa exclusivo para mujeres?</h3>
+                    <p class="text-gray-600">No. El desarrollo personal y la autoestima no tienen género. Toda persona dispuesta a sanar su relación consigo misma es bienvenida.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="font-bold text-gray-800 mb-1">¿Necesito experiencia en desarrollo personal?</h3>
+                    <p class="text-gray-600">En absoluto. Está diseñado de manera progresiva. La diferencia principal aquí es que nos enfocamos en la práctica diaria más que en la simple lectura.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="font-bold text-gray-800 mb-1">¿Cuánto tiempo necesito dedicar al día?</h3>
+                    <p class="text-gray-600">Recomendamos entre 15 y 20 minutos diarios. Si cuentas con tiempo para revisar redes sociales, tienes el tiempo suficiente para priorizarte.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                    <h3 class="font-bold text-gray-800 mb-1">¿De verdad el precio incluye el libro?</h3>
+                    <p class="text-gray-600">Sí. Es una oferta completa por tiempo limitado válida este fin de semana antes del comienzo oficial el 23/02.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-[#A33B39] underline hover:no-underline">Dudas resueltas. Quiero iniciar. →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIERRE EMOCIONAL -->
+    <section class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-6 text-center reveal">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Una última cosa antes de decidir...</h2>
+            
+            <div class="text-sm md:text-base text-gray-600 space-y-4 text-left font-medium leading-relaxed bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                <p>Sé lo que se siente.</p>
+                <p>Sé lo que es despertarte y que lo primero que escuches sea una crítica interna.</p>
+                <p>Sé lo que es dar tanto amor a tu entorno que al final te quedas sin nada para tu propio bienestar.</p>
+                <p><b>El proceso no es una línea recta.</b> Habrá verdades que duelan, pero valen cada momento de incomodidad.</p>
+                <p>Porque al otro lado de ese proceso, existe una persona que se observa en el espejo con comprensión, que sabe poner límites y que confía en que su valor no es negociable.</p>
+                <p class="text-lg font-bold text-[#A33B39] mt-6 text-center">Esa persona ya vive en ti.<br>Es hora de dejarla salir.</p>
+            </div>
+            
+            <div class="mt-10">
+                <a href="https://pay.hotmart.com/T77584395P?checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-glow inline-block bg-[#A33B39] text-white px-10 py-4 rounded-full text-base md:text-lg font-bold shadow-lg transition-all uppercase tracking-wide">
+                    SÍ, ME ELIJO POR $14.99 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-10 text-center text-gray-400 text-xs border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="mb-3 font-semibold text-gray-600">Reto Amor Propio 21 Días</p>
+            <div class="flex justify-center gap-5 mb-4">
+                <a href="#" class="hover:text-gray-800 transition-colors">Términos</a>
+                <a href="#" class="hover:text-gray-800 transition-colors">Privacidad</a>
+                <a href="#" class="hover:text-gray-800 transition-colors">Reembolso</a>
+                <a href="#" class="hover:text-gray-800 transition-colors">Contacto</a>
+            </div>
+            <p>© 2024 Espíritus Positivos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- POPUPS DE PRUEBA SOCIAL -->
+    <div id="popup-container" class="fixed bottom-5 left-5 z-[100] w-64 md:w-72 space-y-3 pointer-events-none"></div>
+
+    <script>
+        // TRACKING EVENTS (CON PROTECCIÓN CONTRA ADBLOCKERS)
+        function trackLead(loc) { 
+            try { 
+                if(typeof fbq !== 'undefined') { fbq('track', 'InitiateCheckout', { location: loc }); }
+            } catch(e) { console.log('Tracking bloqueado, continuando...'); } 
+        }
+        function trackPurchaseEvent(val) { 
+            try { 
+                if(typeof fbq !== 'undefined') { fbq('track', 'Purchase', { value: val, currency: 'USD' }); }
+            } catch(e) { console.log('Tracking bloqueado, continuando...'); } 
+        }
+
+        // TEMPORIZADOR
+        let time = 15 * 60; 
+        const minEl = document.getElementById('timer-min');
+        const secEl = document.getElementById('timer-sec');
+
+        function updateTimer() {
+            if(minEl && secEl) {
+                let mins = Math.floor(time / 60);
+                let secs = time % 60;
+                minEl.innerText = mins.toString().padStart(2, '0');
+                secEl.innerText = secs.toString().padStart(2, '0');
+                if (time > 0) time--;
+            }
+        }
+        setInterval(updateTimer, 1000);
+
+        // LÓGICA DE POPUPS Y CUPOS
+        let currentSlots = 50;
+        const slotsEl = document.getElementById('slots');
+        
+        const popupNames = ["Daniel", "Carolina M.", "Ana Lucía", "Valentina S.", "Elena P.", "Sofía T.", "Marcos", "Lucía F.", "Gabriela", "Patricia R.", "Javier", "Marta S.", "Jimena", "Paula K.", "Andrea", "Camila R."];
+        const popupCountries = ["🇲🇽 México", "🇨🇴 Colombia", "🇦🇷 Argentina", "🇪🇸 España", "🇵🇪 Perú", "🇨🇱 Chile", "🇪🇨 Ecuador", "🇺🇾 Uruguay", "🇨🇷 Costa Rica", "🇺🇸 Estados Unidos"];
+        const popupActions = [
+            "se unió al reto de amor propio ✨",
+            "obtuvo su libro de regalo 🎁",
+            "aprovechó la oferta de $14.99 🎟️",
+            "comenzó su transformación 🦋"
+        ];
+        
+        function createPopup() {
+            if (currentSlots > 3) {
+                currentSlots--;
+                if(slotsEl) {
+                    slotsEl.innerText = currentSlots;
+                    slotsEl.classList.add('scale-125', 'bg-red-100');
+                    setTimeout(() => slotsEl.classList.remove('scale-125', 'bg-red-100'), 400);
+                }
+            }
+
+            const name = popupNames[Math.floor(Math.random() * popupNames.length)];
+            const country = popupCountries[Math.floor(Math.random() * popupCountries.length)];
+            const action = popupActions[Math.floor(Math.random() * popupActions.length)];
+
+            const container = document.getElementById('popup-container');
+            const popup = document.createElement('div');
+            popup.className = "social-proof-popup bg-white p-3.5 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.1)] border-l-4 border-[#A33B39] flex items-center gap-3 pointer-events-auto transition-all duration-500 opacity-0 transform translate-y-10";
+            popup.innerHTML = `
+                <div class="flex-1">
+                    <p class="text-[11px] font-bold text-gray-800">${name} de ${country}</p>
+                    <p class="text-[10px] text-gray-500 font-medium">${action}</p>
+                </div>
+            `;
+            if(container) {
+                container.appendChild(popup);
+                setTimeout(() => popup.classList.remove('opacity-0', 'translate-y-10'), 100);
+                setTimeout(() => {
+                    popup.classList.add('opacity-0', '-translate-x-full');
+                    setTimeout(() => popup.remove(), 500);
+                }, 4000);
+            }
+        }
+
+        function triggerPopups() {
+            createPopup();
+            setTimeout(triggerPopups, Math.random() * 4000 + 4000);
+        }
+        setTimeout(triggerPopups, 2000);
+
+        // SCROLL ANIMATIONS
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
